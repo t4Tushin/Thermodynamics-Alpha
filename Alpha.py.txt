@@ -1,0 +1,44 @@
+## Co-eficcient of Linear Expansion ##
+
+#INFORMATION :
+#L1= Initial Length  
+#L2= Increased Length (Final Length)-
+#ΔL= Difference of Final and initial length
+#A=  Co-eficcient of Linear Expansion 
+#T1= Initial temperature
+#T2= Final Temperature
+#ΔT= Difference of temperature
+
+
+Intention=(input('What are trying to find out? A(Alpha) or L3(Increased length)?'))
+
+if Intention == 'A' :
+  
+#ALGORITHM of finding the value of Alpha :
+ L1=float(input('What is the initial length? '))
+ L2=float(input('What is the Final length? '))
+ L3=float(L2-L1)
+ T1=float(input('What is the initial temperature? '))
+ T2=float(input('What is the Final temperature? '))
+ ΔT=float(T2-T1)
+ A=float(L3/L1*ΔT)
+
+ print(f'α=,{A} K⁻¹')
+
+
+
+
+
+#ALGORITHM of finding the value of ΔL :
+elif Intention == 'L3' :
+ A=float(input('What is the value of A mentioned in the stem ?'))
+
+ L1=float(input('What is the initial length? '))
+ T1=float(input('What is the initial temperature? '))
+ T2=float(input('What is the Final temperature? '))
+ ΔT=float(T2-T1)
+ L3=A*L1*ΔT
+
+print(f'Expanded length={L3}') 
+
+
